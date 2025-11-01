@@ -1,0 +1,31 @@
+.history-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.history-container h3 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.history-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+
+.history-container li:last-child {
+  border-bottom: none;
+}

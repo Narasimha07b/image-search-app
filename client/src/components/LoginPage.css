@@ -1,0 +1,108 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-logo {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.login-section {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-section h2 {
+  margin-bottom: 10px;
+}
+
+.login-section p {
+  margin-bottom: 20px;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  min-width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.google {
+  background-color: #db4437;
+}
+
+.github {
+  background-color: #333;
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+
+@media (max-width: 600px) {
+  .app-logo {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .login-section {
+    padding: 20px;
+  }
+}

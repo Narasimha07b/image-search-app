@@ -1,0 +1,9 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns as per requirements */
+  grid-auto-rows: 200px; /* Add fixed row height to ensure images display */
+  gap: 15px;
+  padding: 0 20px; /* Add some padding to the sides */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid */
+}
