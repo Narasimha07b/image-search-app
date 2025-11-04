@@ -6,9 +6,14 @@ import DashboardPage from './components/DashboardPage';
 import Spinner from './components/Spinner'; // Import Spinner
 import './App.css';
 
+const API = 'https://image-search-x84b.onrender.com' || 'http://localhost:5000';
+
 // Set axios defaults
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://image-search-x84b.onrender.com';
 axios.defaults.withCredentials = true;
+axios.get(`${API}/api/top-searches`);
+axios.post(`${API}/api/search`, { term });
+axios.get(`${API}/api/history`);
 
 function AppContent() {
   const [user, setUser] = useState(null);
