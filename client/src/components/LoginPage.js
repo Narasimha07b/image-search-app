@@ -19,13 +19,13 @@ const LoginPage = () => {
         <h2>Log In</h2>
         <p>Please log in to search for images.</p>
         <div className="login-buttons">
-          <a href="http://localhost:5000/auth/google" className="btn google">
+          <a href="https://image-search-x84b.onrender.com/auth/google" className="btn google">
             Log in with Google
           </a>
-          <a href="http://localhost:5000/auth/github" className="btn github">
+          <a href="https://image-search-x84b.onrender.com/auth/github" className="btn github">
             Log in with GitHub
           </a>
-          <a href="http://localhost:5000/auth/facebook" className="btn facebook">
+          <a href="https://image-search-x84b.onrender.com/auth/facebook" className="btn facebook">
             Log in with Facebook
           </a>
         </div>
