@@ -37,7 +37,7 @@ const DashboardPage = ({ user, setUser }) => {
     setImages([]);
     try {
       const res = await axios.post(
-        'https://image-search-x84b.onrender.com',
+        'http://localhost:5000/api/search',
         { term },
         { withCredentials: true }
       );
