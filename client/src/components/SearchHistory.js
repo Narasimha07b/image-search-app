@@ -8,7 +8,7 @@ const SearchHistory = ({ onSearch }) => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/history', {
+        const res = await axios.get('https://image-search-x84b.onrender.com/api/history', {
           withCredentials: true, // Important for sending the session cookie
         });
         setHistory(res.data);
@@ -21,7 +21,7 @@ const SearchHistory = ({ onSearch }) => {
 
   const clearHistory = async () => {
     try {
-      await axios.delete('http://localhost:5000/api/history', {
+      await axios.delete('https://image-search-x84b.onrender.com/api/history', {
         withCredentials: true,
       });
       setHistory([]);
