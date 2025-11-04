@@ -8,7 +8,7 @@ const TopSearchesBanner = ({ onSearch }) => {
   useEffect(() => {
     const fetchTopSearches = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/top-searches');
+        const res = await axios.get('https://image-search-x84b.onrender.com/api/top-searches');
         setTopSearches(res.data);
       } catch (err) {
         console.error('Error fetching top searches:', err);
