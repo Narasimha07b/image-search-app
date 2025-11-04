@@ -18,7 +18,7 @@ const DashboardPage = ({ user, setUser }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.get('http://localhost:5000/auth/logout', { withCredentials: true });
+      await axios.get('https://image-search-x84b.onrender.com/auth/logout', { withCredentials: true });
       setUser(null);
       window.location.href = '/';
     } catch (err) {
@@ -37,7 +37,7 @@ const DashboardPage = ({ user, setUser }) => {
     setImages([]);
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/search',
+        'https://image-search-x84b.onrender.com/api/search',
         { term },
         { withCredentials: true }
       );
